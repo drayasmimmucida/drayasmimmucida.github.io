@@ -4,6 +4,31 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Dra. Yasmim Mucida | Endocrinologia e Metabologia</title>
+  /* ————— Accordion de Áreas de Atuação ————— */
+details {
+  background: #f1f1f1;
+  margin: 0.5rem 0;
+  padding: 0.8rem;
+  border-left: 4px solid #2f3e34;
+  border-radius: 4px;
+}
+
+details summary {
+  font-weight: bold;
+  list-style: none;       /* remove seta extra em alguns navegadores */
+  cursor: pointer;
+  outline: none;
+}
+
+details[open] {
+  background: #e2f0ea;
+}
+
+details p {
+  margin: 0.5rem 0 0;
+  line-height: 1.4;
+}
+/* ————————————————————————————————————————— */
   <style>
     body { margin: 0; font-family: Arial, sans-serif; background-color: #ffffff; color: #2f3e34; }
     header { background-color: #2f3e34; color: white; padding: 2rem; text-align: center; }
@@ -49,16 +74,48 @@
   </div>
   <div class="section areas">
     <h2>Áreas de Atuação</h2>
-    <ul>
-      <li><strong>Emagrecimento saudável:</strong> acompanhamento médico para perda de peso com segurança.</li>
-      <li><strong>Problemas hormonais:</strong> tratamento de distúrbios hormonais com equilíbrio e cuidado.</li>
-      <li><strong>Deficiências de vitaminas:</strong> avaliação e reposição individualizada.</li>
-      <li><strong>Diabetes e pré-diabetes:</strong> controle e prevenção com orientações personalizadas.</li>
-      <li><strong>Hormonoterapia para transgêneros:</strong> atendimento humanizado e respeitoso.</li>
-      <li><strong>Osteoporose:</strong> diagnóstico e tratamento para saúde óssea.</li>
-      <li><strong>Distúrbios da tireoide:</strong> acompanhamento de hipotireoidismo, hipertireoidismo e nódulos.</li>
-      <li><strong>Colesterol e triglicerídeos:</strong> controle de dislipidemias com base científica.</li>
-    </ul>
+    <div class="section areas">
+  <h2>Áreas de Atuação</h2>
+
+  <details>
+    <summary>Emagrecimento saudável</summary>
+    <p>Alcançar um peso saudável não precisa ser um desafio solitário. Por meio de um acompanhamento médico especializado, buscamos uma perda de peso segura, individualizada e sustentável, com estratégias que vão além das dietas convencionais. Nosso objetivo é promover saúde, autoestima e qualidade de vida.</p>
+  </details>
+
+  <details>
+    <summary>Problemas hormonais</summary>
+    <p>Os hormônios são mensageiros essenciais do nosso organismo. Desequilíbrios hormonais podem afetar profundamente sua saúde física e emocional. Com avaliação criteriosa e tratamento personalizado, restabelecemos o equilíbrio hormonal, proporcionando bem-estar e vitalidade para o seu dia a dia.</p>
+  </details>
+
+  <details>
+    <summary>Deficiências de vitaminas</summary>
+    <p>Vitaminas são fundamentais para o funcionamento equilibrado do nosso organismo. Uma deficiência pode levar a sintomas como cansaço, alterações de humor e até problemas mais sérios. Por isso, oferecemos uma avaliação detalhada e reposição individualizada para garantir que você esteja sempre no seu melhor.</p>
+  </details>
+
+  <details>
+    <summary>Diabetes e pré-diabetes</summary>
+    <p>O diabetes e o pré-diabetes podem parecer assustadores no início, mas com um controle adequado e orientações personalizadas, é possível conviver bem com essas condições. Nosso acompanhamento médico visa prevenção, controle efetivo e melhora significativa da qualidade de vida.</p>
+  </details>
+
+  <details>
+    <summary>Hormonoterapia para transgêneros</summary>
+    <p>O atendimento em hormonoterapia para pessoas trans é realizado com acolhimento, respeito e profundo cuidado. Nosso propósito é assegurar que o processo seja humanizado e seguro, alinhado às expectativas e necessidades individuais, contribuindo para uma jornada tranquila e saudável.</p>
+  </details>
+
+  <details>
+    <summary>Osteoporose</summary>
+    <p>Cuidar dos seus ossos é cuidar do seu futuro. A osteoporose é silenciosa, mas muito tratável quando identificada precocemente. Realizamos diagnóstico detalhado e tratamentos personalizados, com foco na manutenção da sua saúde óssea e prevenção de fraturas.</p>
+  </details>
+
+  <details>
+    <summary>Distúrbios da tireoide</summary>
+    <p>Sua tireoide regula funções essenciais do organismo. Problemas nesta glândula podem causar sintomas como fadiga, ganho ou perda excessiva de peso e alterações emocionais. Oferecemos acompanhamento especializado para diagnóstico, tratamento e controle efetivo do hipotireoidismo, hipertireoidismo e nódulos tireoidianos.</p>
+  </details>
+
+  <details>
+    <summary>Colesterol e triglicerídeos</summary>
+    <p>Níveis elevados de colesterol e triglicerídeos aumentam o risco de doenças cardíacas e vasculares. Com uma abordagem científica e personalizada, trabalhamos para controlar essas alterações, protegendo seu coração e garantindo mais saúde e longevidade.</p>
+  </details>
   </div>
   <div class="section contato">
   <h2>Contato</h2>
