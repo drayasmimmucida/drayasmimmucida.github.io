@@ -30,10 +30,33 @@ details p {
 }
 /* ————————————————————————————————————————— */
   <style>
-    body { margin: 0; font-family: Arial, sans-serif; background-color: #ffffff; color: #2f3e34; }
+    body { margin: 0; font-family: Arial, sans-serif; /* Gradiente suave do branco para verde clarinho */
+background: linear-gradient(180deg, #ffffff 0%, #f7faf5 100%);
+; color: #2f3e34; }
     header { background-color: #2f3e34; color: white; padding: 2rem; text-align: center; }
     header h1 { margin: 0; font-size: 2.2rem; }
-    .hero { text-align: center; padding: 2rem 1rem; }
+    .hero { text-align: center; padding: 2rem 1rem; } /* Forma orgânica no fundo do hero */
+.hero {
+  position: relative;
+  overflow: hidden;   /* garante que o blob não vaze pra fora */
+}
+.hero::before {
+  content: "";
+  position: absolute;
+  top: -50px;
+  left: -50px;
+  width: 300px;
+  height: 300px;
+  background: rgba(47, 62, 52, 0.1);
+  border-radius: 50% 50% 40% 60%;
+  transform: rotate(45deg);
+  z-index: 0;
+}
+.hero * {
+  position: relative;
+  z-index: 1;  /* faz o texto/imagem ficarem acima do blob */
+}
+
     .hero img { width: 200px; border-radius: 50%; }
     .section { padding: 2rem 1rem; max-width: 800px; margin: 0 auto; }
     .section h2 { color: #2f3e34; }
@@ -55,6 +78,13 @@ details p {
   width: 40px;
   height: auto;
   display: block;
+}
+/* Alterna o fundo das seções em branco/verde clarinho */
+.section:nth-of-type(odd) {
+  background-color: #f7faf5;
+}
+.section {
+  padding: 2rem 1rem;  /* garante espaçamento uniforme */
 }
 
   </style>
