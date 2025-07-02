@@ -16,8 +16,22 @@
     .areas li { background: #f1f1f1; padding: 0.8rem; margin: 0.5rem 0; border-left: 4px solid #2f3e34; }
     footer { background-color: #2f3e34; color: white; text-align: center; padding: 1rem; }
     a { color: #2f3e34;  text-decoration: underline; }
-    .whatsapp { position: fixed; bottom: 20px; right: 20px; z-index: 1000; }
-    .whatsapp img { width: 60px; }
+      /* Container fixo no canto */
+.social-fixed {
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  z-index: 1000;
+}
+.social-fixed a img {
+  width: 40px;
+  height: auto;
+  display: block;
+}
+
   </style>
 </head>
 <body>
@@ -51,19 +65,20 @@
   <p><strong>Clínica Posturale</strong><br>
   Torre Del Paseo, 11º andar<br>
   Av. Santos Dumont, 3131 – Fortaleza/CE</p>
-  <p>Telefone: (85) 3264-0456 | (85) 9674-2224</p>
-  <!-- Novo bloco de ícones alinhados -->
-  <div style="display:flex; gap:16px; align-items:center; margin-top:0.5rem;">
-    <a href="https://wa.me/5585997701001" target="_blank" title="WhatsApp">
-      <img src="whatsapp-icon.png" alt="WhatsApp" style="width:32px; height:auto;">
-    </a>
-    <a href="https://instagram.com/yasmimmucida" target="_blank" title="Instagram">
-      <img src="instagram-icon.png" alt="Instagram" style="width:32px; height:auto;">
-    </a>
+  <p>Telefone: (85) 3264-0456 | (85) 99674-2224</p>
   </div>
 </div>
   <footer>
     <p>Site desenvolvido para Dra. Yasmim Mucida | Endocrinologia e Metabologia</p>
   </footer>
+  <!-- Ícones fixos no canto direito -->
+<div class="social-fixed">
+  <a href="https://wa.me/5585997701001" target="_blank" title="WhatsApp">
+    <img src="whatsapp-icon.png" alt="WhatsApp">
+  </a>
+  <a href="https://instagram.com/yasmimmucida" target="_blank" title="Instagram">
+    <img src="instagram-icon.png" alt="Instagram">
+  </a>
+</div>
 </body>
 </html>
